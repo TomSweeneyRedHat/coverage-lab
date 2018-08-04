@@ -7,6 +7,7 @@ import (
 func main() {
 	fmt.Println("hello-world")
 	CallMePlease()
+	CallMePlease()
 	msg:=CallMePlease()
 	fmt.Println(msg)
 }
