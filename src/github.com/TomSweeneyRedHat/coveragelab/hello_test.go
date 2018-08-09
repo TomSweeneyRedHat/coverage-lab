@@ -8,7 +8,7 @@ import (
 func TestApiFail(t *testing.T) {
 	msg := CallMePlease()
 	fmt.Printf("Failure test msg: [%s]\n", msg)
-	if msg != "Thanks so much for calling!" {
+	if msg == "Not Real Error" {
 		t.Errorf("We called the wrong api! [%s]", msg)
 	}
 }
