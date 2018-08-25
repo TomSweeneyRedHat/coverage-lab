@@ -8,6 +8,9 @@ before_install:
   - go get -t -v ./...
 
 script:
+  - pwd
+  - ls -RalF
+  - cd src/github.com/TomSweeneyRedHat/coveragelab
   - go test -race -coverprofile=coverage.txt -covermode=atomic
 
 after_success:
